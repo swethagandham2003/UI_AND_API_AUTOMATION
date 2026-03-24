@@ -1,12 +1,11 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/swethagandham2003/UI_AND_API_AUTOMATION.git'
-            }
-        }
+    stage('Checkout') {
+    steps {
+        git branch: 'main', url: 'https://github.com/swethagandham2003/UI_AND_API_AUTOMATION.git'
+    }
+}
 
         stage('Install Dependencies') {
             steps {
