@@ -1,0 +1,8 @@
+pytest
+selenium
+requests
+pytest-xdist
+pytest-html
+allure-pytest
+jsonschema
+sqlalchemy
