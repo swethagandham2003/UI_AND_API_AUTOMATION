@@ -1,11 +1,7 @@
 pipeline {
     agent any
 
-    stage('Checkout') {
-    steps {
-        git branch: 'main', url: 'https://github.com/swethagandham2003/UI_AND_API_AUTOMATION.git'
-    }
-}
+    stages {
 
         stage('Install Dependencies') {
             steps {
@@ -18,5 +14,6 @@ pipeline {
                 sh 'pytest'
             }
         }
+
     }
 }
